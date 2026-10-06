@@ -1,0 +1,150 @@
+{
+  "scene_id": "dataopen_scene_0010",
+  "split": "train",
+  "source_name": "10_3d_coordinates.json",
+  "source_path": "json/10_3d_coordinates.json",
+  "occlusion_records": [
+    {
+      "fruit_id": 1,
+      "pos": [
+        -216.447131,
+        278.79716,
+        660.07324
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 2,
+      "pos": [
+        -181.629982,
+        177.131053,
+        652.0926
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 3,
+      "pos": [
+        -192.199963,
+        236.415941,
+        671.25134
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.56,
+      "occ": {
+        "U": 0.56,
+        "D": 0.56,
+        "L": 0.56,
+        "R": 0.56
+      }
+    },
+    {
+      "fruit_id": 4,
+      "pos": [
+        -308.971053,
+        119.369061,
+        690.4924
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 5,
+      "pos": [
+        -260.3053,
+        134.482779,
+        685.20776
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 6,
+      "pos": [
+        -61.12717,
+        223.939855,
+        650.2224
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 7,
+      "pos": [
+        -10.403647,
+        221.675883,
+        648.54285
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 8,
+      "pos": [
+        -27.781662,
+        148.624312,
+        660.98145
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.2,
+      "occ": {
+        "U": 0.2,
+        "D": 0.2,
+        "L": 0.2,
+        "R": 0.2
+      }
+    }
+  ],
+  "summary": {
+    "record_count": 8,
+    "mean_scalar_occlusion": 0.095,
+    "ripe_record_count": 8,
+    "representation": "scalar source occlusion replicated into directional schema"
+  }
+}

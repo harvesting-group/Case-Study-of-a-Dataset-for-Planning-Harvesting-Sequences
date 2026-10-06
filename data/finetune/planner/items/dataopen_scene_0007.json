@@ -1,0 +1,189 @@
+{
+  "introduction": "A structured strawberry scene is provided. Generate the picking order for ripe strawberries only. The robot arm starts at [0.0, 0.0, 0.0]. Use the original source weights: fruit-to-fruit distance 0.35, occlusion 0.50, and distance to the robot arm 0.15. Recompute the remaining priorities after each pick because removing one fruit may reduce the occlusion of neighboring fruits. Return the final pick order and a concise explanation.",
+  "input": {
+    "arm_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "clusters": {
+      "C1": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "C2": [
+        4,
+        5,
+        7
+      ]
+    },
+    "fruits": {
+      "1": {
+        "pos": [
+          -248.953933,
+          256.727001,
+          688.2885
+        ],
+        "size": [
+          48.298065,
+          84.07442,
+          688.2885
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "2": {
+        "pos": [
+          -203.991233,
+          209.968385,
+          687.47205
+        ],
+        "size": [
+          71.46782,
+          73.25451,
+          687.47205
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.14,
+        "occ": {
+          "U": 0.14,
+          "D": 0.14,
+          "L": 0.14,
+          "R": 0.14
+        },
+        "cluster_id": "C1"
+      },
+      "3": {
+        "pos": [
+          -209.247801,
+          136.021327,
+          693.0469
+        ],
+        "size": [
+          55.836704,
+          75.64973,
+          693.0469
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.13,
+        "occ": {
+          "U": 0.13,
+          "D": 0.13,
+          "L": 0.13,
+          "R": 0.13
+        },
+        "cluster_id": "C1"
+      },
+      "4": {
+        "pos": [
+          301.633458,
+          189.593888,
+          660.0805
+        ],
+        "size": [
+          54.89621,
+          92.63735,
+          660.0805
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C2"
+      },
+      "5": {
+        "pos": [
+          354.457397,
+          190.19744,
+          656.2439
+        ],
+        "size": [
+          51.16606,
+          105.743195,
+          656.2439
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C2"
+      },
+      "6": {
+        "pos": [
+          -185.96938,
+          261.892255,
+          673.9606
+        ],
+        "size": [
+          42.037918,
+          63.056877,
+          673.9606
+        ],
+        "maturity": 0.0,
+        "ripe": false,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "7": {
+        "pos": [
+          327.027944,
+          227.621159,
+          655.9613
+        ],
+        "size": [
+          35.80082,
+          61.372837,
+          655.9613
+        ],
+        "maturity": 0.0,
+        "ripe": false,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C2"
+      }
+    }
+  },
+  "output": {
+    "pick_order": [
+      4,
+      5,
+      1,
+      2,
+      3
+    ],
+    "reason": "The scene contains 7 strawberries and 5 ripe targets. The robot arm starts at [0.0, 0.0, 0.0]. The source rule weights are fruit distance 0.35, occlusion 0.50, and arm distance 0.15. The original annotations provide a scalar occlusion value for each fruit, so the standardized directional occlusion fields are a neutral replication of that scalar value. Cluster assignments are derived from coordinate gaps only to preserve schema compatibility with the current project format. C1 contains 4 fruits, 3 ripe targets, centroid [-212.040587, 216.152242, 685.692013], and average scalar occlusion 0.07; C2 contains 3 fruits, 2 ripe targets, centroid [327.706266, 202.470829, 657.428567], and average scalar occlusion 0.00. The final ripe-only picking order is [4, 5, 1, 2, 3]. The traversal across derived clusters is ['C2', 'C1']."
+  }
+}

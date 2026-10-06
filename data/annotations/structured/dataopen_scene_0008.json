@@ -1,0 +1,257 @@
+{
+  "introduction": "A structured strawberry scene is provided. Generate the picking order for ripe strawberries only. The robot arm starts at [0.0, 0.0, 0.0]. Use the original source weights: fruit-to-fruit distance 0.35, occlusion 0.50, and distance to the robot arm 0.15. Recompute the remaining priorities after each pick because removing one fruit may reduce the occlusion of neighboring fruits. Return the final pick order and a concise explanation.",
+  "arm_position": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "clusters": {
+    "C1": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "C2": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "fruits": [
+    {
+      "fruit_id": 1,
+      "cluster_id": "C1",
+      "pos": [
+        -94.228153,
+        199.193715,
+        669.27936
+      ],
+      "size": [
+        66.097725,
+        93.928345,
+        669.27936
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 3
+    },
+    {
+      "fruit_id": 2,
+      "cluster_id": "C1",
+      "pos": [
+        -98.612368,
+        276.177391,
+        687.72424
+      ],
+      "size": [
+        62.557278,
+        91.15489,
+        687.72424
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.13,
+      "occ": {
+        "U": 0.13,
+        "D": 0.13,
+        "L": 0.13,
+        "R": 0.13
+      },
+      "average_occlusion": 0.13,
+      "picked": true,
+      "pick_rank": 4
+    },
+    {
+      "fruit_id": 3,
+      "cluster_id": "C1",
+      "pos": [
+        -0.297841,
+        237.628122,
+        664.8806
+      ],
+      "size": [
+        53.567432,
+        88.12706,
+        664.8806
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 1
+    },
+    {
+      "fruit_id": 4,
+      "cluster_id": "C1",
+      "pos": [
+        -7.321699,
+        264.129809,
+        675.2029
+      ],
+      "size": [
+        38.60579,
+        66.682724,
+        675.2029
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.5,
+      "occ": {
+        "U": 0.5,
+        "D": 0.5,
+        "L": 0.5,
+        "R": 0.5
+      },
+      "average_occlusion": 0.5,
+      "picked": true,
+      "pick_rank": 2
+    },
+    {
+      "fruit_id": 5,
+      "cluster_id": "C2",
+      "pos": [
+        321.816843,
+        322.980636,
+        648.8914
+      ],
+      "size": [
+        52.279232,
+        101.18561,
+        648.8914
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 5
+    },
+    {
+      "fruit_id": 6,
+      "cluster_id": "C2",
+      "pos": [
+        365.702698,
+        349.006954,
+        623.0969
+      ],
+      "size": [
+        58.297985,
+        72.87248,
+        623.0969
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 6
+    },
+    {
+      "fruit_id": 7,
+      "cluster_id": "C2",
+      "pos": [
+        442.354536,
+        262.843402,
+        626.15436
+      ],
+      "size": [
+        50.447376,
+        78.11207,
+        626.15436
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 7
+    },
+    {
+      "fruit_id": 8,
+      "cluster_id": "C2",
+      "pos": [
+        491.717063,
+        158.660728,
+        652.7998
+      ],
+      "size": [
+        52.594116,
+        120.4575,
+        652.7998
+      ],
+      "maturity": 1.0,
+      "ripe": true,
+      "occ_scalar": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      },
+      "average_occlusion": 0.0,
+      "picked": true,
+      "pick_rank": 8
+    }
+  ],
+  "pick_order": [
+    3,
+    4,
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reason": "The scene contains 8 strawberries and 8 ripe targets. The robot arm starts at [0.0, 0.0, 0.0]. The source rule weights are fruit distance 0.35, occlusion 0.50, and arm distance 0.15. The original annotations provide a scalar occlusion value for each fruit, so the standardized directional occlusion fields are a neutral replication of that scalar value. Cluster assignments are derived from coordinate gaps only to preserve schema compatibility with the current project format. C1 contains 4 fruits, 4 ripe targets, centroid [-50.115015, 244.282259, 674.271775], and average scalar occlusion 0.16; C2 contains 4 fruits, 4 ripe targets, centroid [405.397785, 273.37293, 637.735615], and average scalar occlusion 0.00. The final ripe-only picking order is [3, 4, 1, 2, 5, 6, 7, 8]. The traversal across derived clusters is ['C1', 'C2'].",
+  "statistics": {
+    "fruit_count": 8,
+    "ripe_count": 8,
+    "unripe_count": 0,
+    "pick_count": 8,
+    "cluster_count": 2,
+    "yolo_label_count": 8,
+    "mean_scalar_occlusion": 0.07875,
+    "source_arm_position": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

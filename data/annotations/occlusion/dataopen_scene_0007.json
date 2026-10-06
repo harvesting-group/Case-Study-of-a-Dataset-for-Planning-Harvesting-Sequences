@@ -1,0 +1,133 @@
+{
+  "scene_id": "dataopen_scene_0007",
+  "split": "train",
+  "source_name": "7_3d_coordinates.json",
+  "source_path": "json/7_3d_coordinates.json",
+  "occlusion_records": [
+    {
+      "fruit_id": 1,
+      "pos": [
+        -248.953933,
+        256.727001,
+        688.2885
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 2,
+      "pos": [
+        -203.991233,
+        209.968385,
+        687.47205
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.14,
+      "occ": {
+        "U": 0.14,
+        "D": 0.14,
+        "L": 0.14,
+        "R": 0.14
+      }
+    },
+    {
+      "fruit_id": 3,
+      "pos": [
+        -209.247801,
+        136.021327,
+        693.0469
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.13,
+      "occ": {
+        "U": 0.13,
+        "D": 0.13,
+        "L": 0.13,
+        "R": 0.13
+      }
+    },
+    {
+      "fruit_id": 4,
+      "pos": [
+        301.633458,
+        189.593888,
+        660.0805
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 5,
+      "pos": [
+        354.457397,
+        190.19744,
+        656.2439
+      ],
+      "ripe": true,
+      "maturity": 1.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 6,
+      "pos": [
+        -185.96938,
+        261.892255,
+        673.9606
+      ],
+      "ripe": false,
+      "maturity": 0.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    },
+    {
+      "fruit_id": 7,
+      "pos": [
+        327.027944,
+        227.621159,
+        655.9613
+      ],
+      "ripe": false,
+      "maturity": 0.0,
+      "scalar_occlusion": 0.0,
+      "occ": {
+        "U": 0.0,
+        "D": 0.0,
+        "L": 0.0,
+        "R": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "record_count": 7,
+    "mean_scalar_occlusion": 0.038571,
+    "ripe_record_count": 5,
+    "representation": "scalar source occlusion replicated into directional schema"
+  }
+}

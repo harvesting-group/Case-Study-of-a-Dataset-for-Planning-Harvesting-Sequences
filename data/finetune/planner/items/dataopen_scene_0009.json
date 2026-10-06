@@ -1,0 +1,265 @@
+{
+  "introduction": "A structured strawberry scene is provided. Generate the picking order for ripe strawberries only. The robot arm starts at [0.0, 0.0, 0.0]. Use the original source weights: fruit-to-fruit distance 0.35, occlusion 0.50, and distance to the robot arm 0.15. Recompute the remaining priorities after each pick because removing one fruit may reduce the occlusion of neighboring fruits. Return the final pick order and a concise explanation.",
+  "input": {
+    "arm_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "clusters": {
+      "C1": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "C2": [
+        6,
+        7
+      ],
+      "C3": [
+        8,
+        9,
+        10
+      ]
+    },
+    "fruits": {
+      "1": {
+        "pos": [
+          -455.403644,
+          296.745226,
+          618.7998
+        ],
+        "size": [
+          43.421955,
+          85.235695,
+          618.7998
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "2": {
+        "pos": [
+          -493.981322,
+          262.615882,
+          637.4523
+        ],
+        "size": [
+          57.984406,
+          104.371925,
+          637.4523
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.19,
+        "occ": {
+          "U": 0.19,
+          "D": 0.19,
+          "L": 0.19,
+          "R": 0.19
+        },
+        "cluster_id": "C1"
+      },
+      "3": {
+        "pos": [
+          -376.775603,
+          208.737353,
+          629.84564
+        ],
+        "size": [
+          42.560127,
+          78.57255,
+          629.84564
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "4": {
+        "pos": [
+          -305.336598,
+          225.463322,
+          644.91266
+        ],
+        "size": [
+          63.69128,
+          95.53693,
+          644.91266
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "5": {
+        "pos": [
+          -323.081159,
+          113.006039,
+          653.68536
+        ],
+        "size": [
+          59.46101,
+          115.52425,
+          653.68536
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C1"
+      },
+      "6": {
+        "pos": [
+          168.563545,
+          330.409815,
+          624.6766
+        ],
+        "size": [
+          35.71687,
+          82.798195,
+          624.6766
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C2"
+      },
+      "7": {
+        "pos": [
+          216.999121,
+          318.848749,
+          605.7957
+        ],
+        "size": [
+          58.25368,
+          99.1887,
+          605.7957
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C2"
+      },
+      "8": {
+        "pos": [
+          387.298794,
+          246.150899,
+          629.24286
+        ],
+        "size": [
+          55.60229,
+          98.12169,
+          629.24286
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C3"
+      },
+      "9": {
+        "pos": [
+          422.730322,
+          233.844305,
+          635.7999
+        ],
+        "size": [
+          44.614876,
+          92.53456,
+          635.7999
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.23,
+        "occ": {
+          "U": 0.23,
+          "D": 0.23,
+          "L": 0.23,
+          "R": 0.23
+        },
+        "cluster_id": "C3"
+      },
+      "10": {
+        "pos": [
+          481.316155,
+          200.143545,
+          638.99164
+        ],
+        "size": [
+          59.785126,
+          117.90955,
+          638.99164
+        ],
+        "maturity": 1.0,
+        "ripe": true,
+        "occ_scalar": 0.0,
+        "occ": {
+          "U": 0.0,
+          "D": 0.0,
+          "L": 0.0,
+          "R": 0.0
+        },
+        "cluster_id": "C3"
+      }
+    }
+  },
+  "output": {
+    "pick_order": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      4,
+      5,
+      3,
+      1,
+      2
+    ],
+    "reason": "The scene contains 10 strawberries and 10 ripe targets. The robot arm starts at [0.0, 0.0, 0.0]. The source rule weights are fruit distance 0.35, occlusion 0.50, and arm distance 0.15. The original annotations provide a scalar occlusion value for each fruit, so the standardized directional occlusion fields are a neutral replication of that scalar value. Cluster assignments are derived from coordinate gaps only to preserve schema compatibility with the current project format. C1 contains 5 fruits, 5 ripe targets, centroid [-390.915665, 221.313564, 636.939152], and average scalar occlusion 0.04; C2 contains 2 fruits, 2 ripe targets, centroid [192.781333, 324.629282, 615.23615], and average scalar occlusion 0.00; C3 contains 3 fruits, 3 ripe targets, centroid [430.448424, 226.712916, 634.678133], and average scalar occlusion 0.08. The final ripe-only picking order is [6, 7, 8, 9, 10, 4, 5, 3, 1, 2]. The traversal across derived clusters is ['C2', 'C3', 'C1']."
+  }
+}
